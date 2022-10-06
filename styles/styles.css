@@ -45,25 +45,30 @@ nav{
     text-align: center;
 }
 
-.hero-bar{
+.hero-section{
     display: flex;
     align-items: center;
     gap: 30px;
 }
 
-.hero-bar-left > h2{
+.hero-section-left > h2{
     font-size: 55px;
     font-weight: 600;
 }
 
-.hero-bar-left > p{
+.hero-section-left > p{
     margin-top: 20px;
     font-size: 20px;
     line-height: 1.8;
     font-weight: 500;
 }
 
-#hero-bar-button{
+#hero-section-right > img{
+    width : 950px; 
+    height : 700px;
+}
+
+#hero-section-button{
     margin-top: 50px;
     color: white;
     padding: 25px 100px;
@@ -83,7 +88,7 @@ nav{
     gap: 50px;
 }
 
-#section-item1,#section-item3 {
+#section-item1,#section-item3, #section-item2 {
     display: grid;
     grid-template-columns: 2fr 1fr;
     background-color: whitesmoke;
@@ -95,19 +100,10 @@ nav{
     box-sizing: border-box;
 }
 
-#section-item2{
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    background-color: whitesmoke;
-    padding-top: 80px;
-    padding-bottom: 80px;
-    padding-left: 150px;
-    border-radius: 30px;
-    border-style: none;
-    box-shadow: rgb(0 0 0 / 20%) 0 3px 5px -1px, rgb(0 0 0 / 14%) 0 6px 10px 0, rgb(0 0 0 / 12%) 0 1px 18px 0;
-    box-sizing: border-box;
+#section-img{
+    width : 700px; 
+    height : 500px;
 }
-
 
 #text{
     display: flex;
@@ -117,19 +113,8 @@ nav{
     padding-right: 100px;
 }
 
-
-#section-item2 > #text{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 30px;
-    padding-left: 100px;
-    padding-right: 50px;
-}
-
 #section-item4{
-    /* margin-top: 50px; */
-    background-color: hsl(180, 9%, 96%);
+    background-color: whitesmoke;
     width: 60%;
     margin: 0 auto;
     padding: 80px 100px;
@@ -137,6 +122,9 @@ nav{
     flex-direction: column;
     align-items: center;
     border-radius: 30px;
+    border-style: none;
+    box-shadow: rgb(0 0 0 / 20%) 0 3px 5px -1px, rgb(0 0 0 / 14%) 0 6px 10px 0, rgb(0 0 0 / 12%) 0 1px 18px 0;
+    box-sizing: border-box;
 }
 
 #section-item4 > h2{
@@ -158,7 +146,7 @@ nav{
     border-radius: 24px;
 }
 
-#section-item4 > button:hover, #hero-bar-button:hover, #navbar-button > button:hover{
+#section-item4 > button:hover, #hero-section-button:hover, #navbar-button > button:hover{
     opacity: 0.8;
     cursor: pointer;
 }
@@ -177,7 +165,7 @@ nav{
 
 .bottom{
     background-color: hsl(208, 11%, 55%);
-    padding: 100px 150px;
+    padding: 100px 150px 0px;
     display: flex;
     flex-direction: column;
     gap: 30px;
@@ -233,10 +221,138 @@ nav{
 }
 
 #bottom-down{
-    text-align: end;
+    text-align: center;
+    line-height: 2;
 }
 
 p{
     font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
+@media only screen and (max-width: 600px) {
+    header{
+        background-color: hsl(193, 100%, 96%);
+        display: flex;
+        flex-direction: column;
+        gap: 100px;
+        padding: 50px 20px;
+    }
+    
+    nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    #navbar-button > button{
+        font-size: 18px;
+        padding: 15px 50px;
+    }
+
+    .hero-section{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 30px;
+    }
+
+    .hero-section-left > h2{
+        font-size: 45px;
+    }
+    
+    .hero-section-left > p{
+        margin-top: 20px;
+        font-size: 25px;
+        line-height: 1.8;
+        font-weight: 500;
+    }
+
+    #hero-section-right > img{
+        margin-top: 30px;
+        width : 500px; 
+        height : 350px;
+    }
+
+    #text > p{
+        margin: 0px;
+        font-size: 20px;
+        line-height: 1.8;
+        font-weight: 500;
+    }
+
+    .section-body{
+        padding: 50px 30px;
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    #section-img{
+        width : 400px; 
+        height : 300px;
+    }
+
+    #section-item1,#section-item3,#section-item2{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 30px;
+        padding: 60px;
+    }
+
+    #section-item4{
+        width: 100%;
+        padding: 40px;
+    }
+
+    #section-item4 > h2{
+        text-align: center;
+        font-size: 25px;
+    }
+    
+    #section-item4 > button {
+        margin-top: 15px;
+        color: white;
+        padding: 20px 60px;
+    }
+
+    #text{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 30px;
+        padding: 0px;
+    }
+    
+    
+    #section-item2 > #text{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 30px;
+        padding: 0px;
+
+    }
+    
+
+    .bottom{
+        padding: 80px 40px 0px;
+    }
+    #bottom-up{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    #bottom-top-icons{
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+    }
+
+    #bottom-down{
+        line-height: 1.5;
+    }
+}
