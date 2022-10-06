@@ -244,6 +244,10 @@ p{
         align-items: center;
     }
 
+    #logo > img{
+        width: 150px;
+        height: 25px;
+    }
     #navbar-button > button{
         font-size: 15px;
         padding: 10px 40px;
