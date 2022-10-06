@@ -159,7 +159,7 @@ nav{
 }
 
 #section-item4 > button:hover, #hero-bar-button:hover, #navbar-button > button:hover{
-    opacity: 0.4;
+    opacity: 0.8;
     cursor: pointer;
 }
 
