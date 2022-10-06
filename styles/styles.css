@@ -7,7 +7,7 @@
 }
 
 body{
-    font-size: 18px;
+    font-size: 18px; 
 }
 
 h1, h2, h3, h4{
@@ -65,7 +65,70 @@ nav{
     border-radius: 60px;
 }
 
-/* #hero-bar-right > img{
-    width: 50%;
-    font-family: ;
-} */
+.section-body{
+    padding: 100px 150px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.bottom{
+    background-color: hsl(208, 11%, 55%);
+    padding: 100px 150px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+#bottom-up{
+    display: grid;
+    grid-template-columns: 2fr repeat(3, 1fr);
+    gap: 40px;
+}
+
+#bottom-up > .details > #location, #mail, #phone > p {
+    font-size: 20px;
+}
+
+#bottom-up > #about > p {
+    font-size: 20px;
+}
+
+#bottom-up > #career > p {
+    font-size: 20px;
+}
+
+.details{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding-right: 100px;
+}
+
+#about, #career{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#location, #mail, #phone{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+#bottom-top-icons{
+    display: flex;
+    align-items: flex-start;
+    gap: 30px;
+}
+
+#bottom-top-icons > img{
+    border: 3px solid white;
+    padding: 5px;
+    border-radius: 50%;
+}
+
+#bottom-down{
+    text-align: end;
+}
